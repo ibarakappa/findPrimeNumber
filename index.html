@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="card m-2 d-flex justify-content-center" style="width: 40rem">
+         <h1 class="m-2 text-center fs-4">找質數</h1>
+      </div>
+      <!-- input按鈕與結果 -->
+      <div class="card" style="width: 40rem; height: 20rem">
+         <div class="d-flex align-items-center justify-content-center m-4">
+            <p class="mb-0 mx-2 fs-6">找</p>
+            <input id="input" class="mx-2 rounded" type="number" />
+            <p class="mb-0 mx-2">以內的質數：</p>
+            <button id="btn" class="btn btn-secondary px-4 py-0">搜尋</button>
+         </div>
+         <div
+            class="result d-flex flex-column align-items-center justify-content-center"
+         >
+            <h2>結果</h2>
+            <ul class="d-flex list-unstyled" id="answer"></ul>
+            <ul class="d-flex list-unstyled" id="answer2"></ul>
+         </div>
+      </div>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
